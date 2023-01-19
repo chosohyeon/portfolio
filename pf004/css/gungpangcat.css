@@ -268,7 +268,7 @@ main .noticeFaq .container .box div .box ul>li>a>p {
 /* ---------- SPONSER ---------- */
 
 main .sponser {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 main .sponser .tit {
@@ -307,7 +307,7 @@ main .sponser .sponserList .sponserSlide {
     display: flex;
     gap: 30px;
     width: 1170px;
-    align-items: center;
+    align-items: flex-end;
     margin: 0 auto;
 }
 

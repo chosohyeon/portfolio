@@ -52,7 +52,6 @@ main .container .mainVisual {
 
 main .container .mainVisual .leftInfo {
     position: absolute;
-    /* bottom: 0; */
     top: 200px;
     left: 100px;
     z-index: 999;
