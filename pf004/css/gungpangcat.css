@@ -1,0 +1,363 @@
+* {
+    /* outline: 1px solid rgb(145, 56, 56); */
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ---------- HEADER ---------- */
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#header .gnb {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nanum Gothic';
+    line-height: 80px;
+    background: #fff;
+    padding: 0 50px;
+}
+
+#header .gnb h1>a>img {
+    width: 150px;
+}
+
+#header .gnb nav>ul {
+    display: flex;
+    gap: 100px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#header .gnb nav>ul>li:hover .menu {
+    color: #ff92ae;
+}
+
+#header .gnb .login {
+    width: 150px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: end;
+}
+
+header .gnb nav>ul>li {
+    position: relative;
+}
+
+header .gnb nav>ul>li .smenu {
+    display: none;
+    position: absolute;
+    inset: 80px auto auto 50%;
+    z-index: 999;
+    width: 180px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    transform: translateX(-50%);
+    text-align: center;
+    background: #fff;
+}
+
+header .gnb nav>ul>li .smenu li:hover {
+    color: rgba(0, 167, 136, 1);
+}
+
+header .gnb nav>ul>li:hover .smenu {
+    display: block;
+}
+
+
+/* ---------- MAIN VISUAL ---------- */
+
+main .mainVisual {
+    position: relative;
+    height: calc(100vh - 80px);
+    background: #00B6E0 url(../img/gdppcat2022_banner_web.jpg) no-repeat center;
+    background-size: 100%;
+    margin-bottom: 100px;
+}
+
+main .mainVisual .wheel {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+main .mainVisual .wheel span {
+    font-size: 0;
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    width: 4px;
+    height: 10px;
+    background: #fff;
+    border-radius: 2px;
+    animation: wheel 0.7s infinite;
+}
+
+@keyframes wheel {
+    to {
+        top: 15px;
+    }
+}
+
+/* ---------- EVENT ---------- */
+
+main .event {
+    margin-bottom: 150px;
+}
+
+main .event .container .eventBox {
+    position: relative;
+    width: 350px;
+}
+
+main .event .container h2 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+main .event .container .eventSlide {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .event .container .eventBox {
+    border: 1px solid #ddd;
+}
+
+main .event .container .eventSlide .eventBox .dDay {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: sandybrown;
+    border: 2px solid sandybrown;
+}
+
+main .event .container .eventSlide .eventBox .dDay>p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0;
+    color: #fff;
+}
+
+main .event .container .eventSlide .eventBox figure {
+    margin-bottom: 20px;
+}
+
+main .event .container .eventSlide .eventBox h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main .event .container .eventSlide .eventBox .button {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+main .event .container .eventSlide .eventBox .button a~a {
+    margin-left: 15px;
+}
+
+main .event .container .eventSlide .eventBox .button .join {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #ff92ae;
+    background: #ff92ae;
+    color: #fff;
+}
+
+main .event .container .eventSlide .eventBox .button .join:hover {
+    border: 1px solid #ff92ae;
+    background: #fff;
+    color: #ff92ae;
+}
+
+main .event .container .eventSlide .eventBox .button .onlySns {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #01a488;
+    color: #fff;
+}
+
+/* ---------- NOTICE & FAQ ---------- */
+
+main .noticeFaq {
+    margin-bottom: 100px;
+}
+
+main .noticeFaq .container .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .noticeFaq .container h2 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+main .noticeFaq .container .box .notice,
+.faq {
+    width: 550px;
+}
+
+main .noticeFaq .container .box div .titMenu {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+main .noticeFaq .container .box div .titMenu h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+main .noticeFaq .container .box div .titMenu p {
+    font-size: 17px;
+    color: rgb(144, 144, 144);
+}
+
+main .noticeFaq .container .box div .box ul>li>a {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+main .noticeFaq .container .box div .box ul>li>a>h3 {
+    font-size: 17px;
+}
+
+main .noticeFaq .container .box div .box ul>li>a>p {
+    font-size: 15px;
+}
+
+
+/* ---------- SPONSER ---------- */
+
+main .sponser {
+    margin-bottom: 100px;
+}
+
+main .sponser .tit {
+    position: relative;
+    background: sandybrown;
+    height: 500px;
+    padding-top: 50px;
+}
+
+main .sponser .tit p {
+    width: 1170px;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    margin: 0 auto;
+}
+
+main .sponser .tit img {
+    position: absolute;
+    top: 350px;
+    right: -350px;
+    transform: translate(-50%, -50%);
+}
+
+
+main .sponser .sponserList h2 {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+main .sponser .sponserList .sponserSlide {
+    display: flex;
+    gap: 30px;
+    width: 1170px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+main .sponser .sponserList .sponserSlide a>img {
+    width: 200px;
+}
+
+/* ---------- FOTTER ---------- */
+
+footer {
+    background: rgb(121, 121, 121);
+    padding: 30px 100px;
+}
+
+footer .container {
+    display: flex;
+    gap: 30px;
+}
+
+footer .container .footerInfo {
+    flex: 1;
+
+}
+
+footer .container .footerInfo h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+footer .container .footerInfo address>ul {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+footer .container .footerInfo p {
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+footer .container .bottomLogo {
+    width: 150px;
+}
+
+footer .container .sns a~a {
+    padding-left: 10px;
+}
